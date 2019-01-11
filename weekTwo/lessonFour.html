@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week Three Subject Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Link to a downloaded twitter bootstrap cascading style sheet full of many features-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- This is an internal style block of code to override some of the bootstrap style values-->
+    <style type="text/css">
+    .navbar .nav > li > a {
+        color: #84B1DB; /*nav color*/
+        text-shadow: none;
+    }
+    .navbar .nav > li > a:hover {
+        color:white;
+        background: #A2A2A2;
+
+    }
+    .myclass {
+        color: #FF0000;
+        background-color:  #99ffcc;
+    }
+    .row1Styles {
+        background-color: #fcc7b5; 
+        min-height: 200px;
+    }
+    .row2Styles {
+    }
+    .col1Styles {
+        background-color: #f99286; 
+        height: 700;
+        
+    }
+    .col2Styles {
+        background-color: gray; 
+        min-height: 200px;
+        width: 585px;
+
+    }
+    .col-sm-6 {
+        background-color: grey;
+        text-align: center;
+    }
+    #button {
+        margin: 0 auto;
+        text-align:center;
+        display: flex; 
+        justify-content: center;
+    }
+    .row {
+        background-color: grey;
+    }
+    .affix {
+        top: 0;
+        width: 75%;
+        z-index: 9999 !important;
+    }
+
+    .affix + .container-fluid {
+        padding-top: 70px;
+    }
+
+</style>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--  The container class from bootstrap is a width of 1000 pixels. 
+  It has all the padding other values to help make the content look its best in many different browsers.-->
+  <div class="container">
+    <!--  navbar class has many types, this is the first one you can use. we will explore other in class or video lesson-->
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://seattleacademy.org/">Seattle Academy</a>
+            <ul class="nav navbar-nav">
+                <li><a href="../weekOne/index.html">Main page</a></li>
+                <li><a href="../weekOne/lessonTwo.html">Lesson Two</a></li>
+                <li><a href="lessonThree.html">Lesson Three</a></li>
+                <li class="active"><a href="lesson4.html">Fourth page</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--     An example of the many classes (another identification element) that are inside the bootstrap library-->
+
+    <!--  You can do columns by putting spans inside of rows. -->
+    <div class="row">
+    </div>
+    <div class="row row1Styles" aling = "center">
+        <div class="col-sm-6">
+            <h3>Some Images</h3>
+            <div id="myCarousel" class="carousel slide">
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item"><p></p><img src="FT7A8524.png" width="900" height="40"></div>
+                    <div class="item"><p></p><img src="FT7A9937.png" width="600" height="400"></div>
+                    <div class="item"><p></p><img src="FT7A5503.png" width="600" height="400"></div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div> 
+        </div>  <!-- closing column -->
+
+        <div class="col-sm-5 col2Styles">
+
+
+
+
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="button">click me</button>
+
+
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">hey</h4>
+              </div>
+              <div class="modal-body">
+                  <p>i just wanted to tell ya ur baeutiful</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+
+</div> 
+</div>  
+
+<div class="row row2Styles">
+
+  
+        <div class="container">
+          <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">u may think this is cool</button>
+          <div id="demo" class="collapse">
+            wowi
+        </div>
+
+</div>
+<!--<div class="col-sm-5 col2Styles">
+    <p>Find any other bootstrap feature and paste it here</p>
+</div>--> 
+
+</div>  
+</div> 
+</body>
+</html>
+
+
+
+
